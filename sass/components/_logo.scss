@@ -1,0 +1,37 @@
+.header__logo {
+    color: $logo-color;
+    font-family: $raleway;
+    text-decoration: none;
+    
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    //font-size: 26px;
+    //line-height: 1.19;
+}
+
+.header__logo-accent {
+    color: $accent-color;
+}
+
+.footer__logo {
+    display: block;
+    color: $secondary-color;
+    font-family: raleway, sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 20px;
+    //font-size: 26px;
+    //line-height: 1.19;
+    //margin-bottom: 29px;
+}
+
+.footer__logo-accent {
+    color: $accent-color;
+}
+
+.footer__logo-portfolio {
+    margin-bottom: 20px;
+}

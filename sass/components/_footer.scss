@@ -1,0 +1,195 @@
+.footer {
+    background-color: $footer-bg-color;
+    padding: 60px 0;
+    text-align: center;
+    @media screen and(min-width:1200px) {
+        text-align: start;
+    }
+}
+
+.footer__container {
+    @extend %container;
+
+    @media screen and(min-width:1200px) {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .footer__wraph-phablet {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+@media screen and (min-width:768px) and(max-width:1199px) {
+    .footer__wraph-phablet{
+        justify-content: space-around;
+    }
+}
+
+.address {
+    font-style: normal;
+    min-width: 231px;
+}
+
+.address__list {
+    @extend %list;
+    margin-bottom: 60px;
+}
+
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address__map {
+    @extend %link;
+    color: $secondary-color;
+    line-height: 1.71;
+    transition: color 250ms $timing-function;
+}
+
+.address__mail,
+.address__tel {
+    @extend %link;
+    line-height: 1.71;
+    color: $footer-contacts-color;
+    transition: color 250ms $timing-function;
+}
+
+//---------------------------------JOIN US---------------------------
+
+.join__box {
+    @media screen and (min-width:1200px) {
+        margin-left: 60px;
+    }
+}
+
+.join__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $secondary-color;
+    margin-bottom: 20px;
+}
+
+.join__list {
+    @extend %list;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.join__item {
+    display: flex;
+    padding-bottom: 0;
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.join__link {
+    @extend %link;
+    display: block;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+    fill: $secondary-color;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition: fill 250ms $timing-function,
+        background-color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        fill: $secondary-color;
+    }
+}
+
+.join__icon {
+    width: 20px;
+    height: 20px;
+}
+
+//----------------------------SUBSCRIPTION------------------------------------
+
+.subscription__form {
+    max-width: 450px;
+    @media screen and (min-width:768px) {
+        width: 450px;
+        display: inline-block;
+    }
+
+    @media screen and(min-width:1200px) {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 90px;
+    }
+}
+
+.subscription__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $secondary-color;
+    margin-bottom: 20px;
+}
+
+.subscription__group {
+    @media screen and(min-width:1200px) {
+        display: flex;
+    }
+}
+
+.subscription__input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    background-color: transparent;
+
+    &:focus {
+        color: $secondary-color;
+    }
+}
+
+.subscription__button {
+    @extend %button;
+    display: flex;
+    margin: 0 auto;
+    padding: 10px 28px;
+
+    @media  screen and(min-width:1200px) {
+        align-items: center;
+        margin-left: 12px;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: #0e7cd6;
+    }
+
+    &:active {
+        box-shadow: inset 0px 0px 50px -10px #aea4cf;
+    }
+}
+
+.subscription__icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
