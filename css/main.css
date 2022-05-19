@@ -355,12 +355,24 @@ img {
   color: #2196F3;
 }
 
+@media screen and (max-width: 480px) {
+  .contact__link-tel {
+    font-size: 7vmin;
+  }
+}
+
 .contact__link-mail {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
+}
+
+@media screen and (max-width: 480px) {
+  .contact__link-mail {
+    font-size: 5vmin;
+  }
 }
 
 .contacts__socials {
@@ -383,6 +395,12 @@ img {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196F3;
+}
+
+@media screen and (max-width: 480px) {
+  .socials__link-menu {
+    font-size: 4vmin;
+  }
 }
 
 .portfolio__title-hidden {

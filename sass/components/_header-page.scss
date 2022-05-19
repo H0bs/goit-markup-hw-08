@@ -213,6 +213,9 @@
     letter-spacing: 0.02em;
 
     color: $accent-color;
+    @media screen and (max-width:480px) {
+        font-size: 7vmin;
+    }
 }
 
 .contact__link-mail {
@@ -223,6 +226,9 @@
     letter-spacing: 0.02em;
 
     color: $text-color;
+        @media screen and (max-width:480px) {
+                font-size: 5vmin;
+            }
 }
 
 .contacts__socials {
@@ -246,5 +252,8 @@
     letter-spacing: 0.02em;
     
     color: $accent-color;
+        @media screen and (max-width:480px) {
+                font-size: 4vmin;
+            }
 }
 
