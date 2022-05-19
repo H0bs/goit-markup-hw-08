@@ -9,8 +9,7 @@
 .project__item {
     width: 100%;
     margin-bottom: 30px;
-    transition: box-shadow 250ms $timing-function;
-
+    
     @media screen and (min-width:768px) and (max-width:1199px) {
             display:flex;
             flex-direction:column;
@@ -37,6 +36,12 @@
         }
     }
 
+}
+
+.project__link{
+    @extend %link;
+    display: block;
+    transition: box-shadow 250ms $timing-function;
     &:hover {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
             0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -88,6 +93,7 @@
 }
 
 .project__name {
+    color: $primary-text-color;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;

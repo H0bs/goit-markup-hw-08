@@ -18,16 +18,22 @@
     @media screen and(min-device-pixel-ration: 2),
         screen  and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx){
-        background-image: url(../images/studio/header-480-2x.jpg);
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url(../images/studio/header-480-2x.jpg);
     }
 
     @media screen and (min-width:768px) {
         max-width: 1199px;
-        background-image: url(../images/studio/header-768.jpg);
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url(../images/studio/header-768.jpg);
             @media screen and(min-device-pixel-ration: 2),
                 screen and (min-resolution: 192dpi),
                 screen and (min-resolution: 2dppx) {
-            background-image: url(../images/studio/header-768-2x.jpg);
+            background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url(../images/studio/header-768-2x.jpg);
             
             }
     }
@@ -35,12 +41,16 @@
         height: 600px;
         max-width: 1600px;
         padding: 200px 0;
-        background-image: url(../images/studio/header-1600.jpg);
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url(../images/studio/header-1600.jpg);
     
         @media screen and(min-device-pixel-ration: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-            background-image: url(../images/studio/header-1600-2x.jpg);
+            background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url(../images/studio/header-1600-2x.jpg);
             }
     }
 }

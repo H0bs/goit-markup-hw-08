@@ -46,6 +46,7 @@
 
 .navigation__link-current {
     position: relative;
+    color: $accent-color;
 
     &::after {
         content: '';
